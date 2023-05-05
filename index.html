@@ -1,34 +1,38 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
-                
-    </head>
-    <body>
-        <div class="container">
-            <div class="game-div home-div">
-                <h3>HOME</h3>
-                <div class="score-div">
-                    <h1 id="home-h1">0</h1>
-                </div>
-                <div class="button-div">
-                    <button id="btn-h1" onclick="homeAdd(1)">+1</button>
-                    <button id="btn-h2" onclick="homeAdd(2)">+2</button>
-                    <button id="btn-h3" onclick="homeAdd(3)">+3</button>
-                </div>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="game-div home-div">
+            <h3>HOME</h3>
+            <div class="score-div">
+                <h1 id="home-h1">0</h1>
             </div>
-            <div class="game-div guest-div">
-                <h3>GUEST</h3>
-                <div class="score-div">
-                    <h1 id="guest-h1">0</h1>
-                </div>
-                <div class="button-div">
-                    <button id="btn-g1" onclick="guestAdd(1)">+1</button>
-                    <button id="btn-g2" onclick="guestAdd(2)">+2</button>
-                    <button id="btn-g3" onclick="guestAdd(3)">+3</button>
-                </div>
+            <div class="button-div">
+                <button id="btn-h1" onclick="homeAdd(1)">+1</button>
+                <button id="btn-h2" onclick="homeAdd(2)">+2</button>
+                <button id="btn-h3" onclick="homeAdd(3)">+3</button>
             </div>
         </div>
-        <script src="index.js"></script>
-    </body>
+        <div class="game-div guest-div">
+            <h3>AWAY</h3>
+            <div class="score-div">
+                <h1 id="guest-h1">0</h1>
+            </div>
+            <div class="button-div">
+                <button id="btn-g1" onclick="guestAdd(1)">+1</button>
+                <button id="btn-g2" onclick="guestAdd(2)">+2</button>
+                <button id="btn-g3" onclick="guestAdd(3)">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>
